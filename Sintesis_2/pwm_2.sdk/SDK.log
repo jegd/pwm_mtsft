@@ -1,0 +1,103 @@
+00:10:12 INFO  : Registering command handlers for SDK TCF services
+00:10:12 INFO  : Launching XSCT server: xsct.bat -interactive D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis_2\pwm_2.sdk\temp_xsdb_launch_script.tcl
+00:10:14 INFO  : XSCT server has started successfully.
+00:10:14 INFO  : Successfully done setting XSCT server connection channel  
+00:10:15 INFO  : Successfully done setting SDK workspace  
+00:10:15 INFO  : Processing command line option -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper.hdf.
+00:16:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:16:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:18:04 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+00:18:14 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+00:18:21 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+00:18:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA" && level==0} -index 1' command is executed.
+00:18:47 INFO  : 'fpga -state' command is executed.
+00:18:47 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+00:18:47 WARN  : SDK version '2018.1' doesn't match hw_server version '2023.2'. Some debug features may not work.
+00:18:48 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+00:18:48 INFO  : 'jtag frequency' command is executed.
+00:18:48 INFO  : Sourcing of 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:18:49 INFO  : Context for 'APU' is selected.
+00:18:49 INFO  : Hardware design information is loaded from 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/system.hdf'.
+00:18:49 INFO  : 'configparams force-mem-access 1' command is executed.
+00:18:49 INFO  : Context for 'APU' is selected.
+00:18:50 INFO  : 'stop' command is executed.
+00:19:28 INFO  : 'ps7_init' command is executed.
+00:19:29 INFO  : 'ps7_post_config' command is executed.
+00:19:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:19:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:31 INFO  : The application 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/pwm_2/Debug/pwm_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:19:31 INFO  : 'configparams force-mem-access 0' command is executed.
+00:19:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:lseserver.ddns.net:3121
+source D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+loadhw -hw D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+dow D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/pwm_2/Debug/pwm_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:19:32 INFO  : Memory regions updated for context APU
+00:19:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:32 INFO  : 'con' command is executed.
+00:19:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+con
+----------------End of Script----------------
+
+00:19:32 INFO  : Launch script is exported to file 'D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis_2\pwm_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pwm_2.elf_on_local.tcl'
+00:21:35 INFO  : Disconnected from the channel tcfchan#2.
+00:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA" && level==0} -index 1' command is executed.
+00:21:37 INFO  : 'fpga -state' command is executed.
+00:21:37 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+00:21:37 WARN  : SDK version '2018.1' doesn't match hw_server version '2023.2'. Some debug features may not work.
+00:22:37 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+00:22:37 INFO  : 'jtag frequency' command is executed.
+00:22:37 INFO  : Sourcing of 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:22:37 INFO  : Context for 'APU' is selected.
+00:22:40 INFO  : Hardware design information is loaded from 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/system.hdf'.
+00:22:40 INFO  : 'configparams force-mem-access 1' command is executed.
+00:22:40 INFO  : Context for 'APU' is selected.
+00:22:40 INFO  : 'stop' command is executed.
+00:23:19 INFO  : 'ps7_init' command is executed.
+00:23:20 INFO  : 'ps7_post_config' command is executed.
+00:23:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:23:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:23:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:23:22 INFO  : The application 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/pwm_2/Debug/pwm_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:23:22 INFO  : 'configparams force-mem-access 0' command is executed.
+00:23:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:lseserver.ddns.net:3121
+source D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+loadhw -hw D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/sistema_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+dow D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.sdk/pwm_2/Debug/pwm_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:23:23 INFO  : Memory regions updated for context APU
+00:23:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:23:23 INFO  : 'con' command is executed.
+00:23:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+con
+----------------End of Script----------------
+
+00:23:23 INFO  : Launch script is exported to file 'D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis_2\pwm_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pwm_2.elf_on_local.tcl'
+00:34:20 INFO  : Disconnected from the channel tcfchan#3.

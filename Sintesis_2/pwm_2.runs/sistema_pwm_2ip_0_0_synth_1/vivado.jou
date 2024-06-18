@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun 17 23:53:56 2024
+# Process ID: 28276
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.runs/sistema_pwm_2ip_0_0_synth_1
+# Command line: vivado.exe -log sistema_pwm_2ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sistema_pwm_2ip_0_0.tcl
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.runs/sistema_pwm_2ip_0_0_synth_1/sistema_pwm_2ip_0_0.vds
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_2/pwm_2.runs/sistema_pwm_2ip_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sistema_pwm_2ip_0_0.tcl -notrace

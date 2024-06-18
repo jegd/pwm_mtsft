@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun 16 23:59:38 2024
+# Process ID: 9500
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2808 D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis\project_pwm.xpr
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/vivado.log
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+open_hw
+connect_hw_server -url lseserver.ddns.net:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A4C81CA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A4C81CA]
+open_hw_target
+set_property PROGRAM.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+close_hw_target {lseserver.ddns.net:3121/xilinx_tcf/Digilent/003017A4C81CA}

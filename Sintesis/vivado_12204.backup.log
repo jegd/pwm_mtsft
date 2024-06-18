@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun 16 23:47:26 2024
+# Process ID: 12204
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24128 D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis\project_pwm.xpr
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/vivado.log
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 855.125 ; gain = 80.844
+update_compile_order -fileset sources_1
+open_bd_design {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:pwm_ip:1.0 - pwm_ip_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <sistema> from BD file <D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 961.180 ; gain = 90.312
+set_property synth_checkpoint_mode Hierarchical [get_files  D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd]
+generate_target all [get_files  D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd]
+INFO: [BD 41-1662] The design 'sistema.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/ui/bd_c3d2bea2.ui> 
+VHDL Output written to : D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/synth/sistema.vhd
+VHDL Output written to : D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sim/sistema.vhd
+VHDL Output written to : D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/hdl/sistema_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pwm_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/ip/sistema_ila_0_0/sistema_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/ip/sistema_auto_pc_0/sistema_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/hw_handoff/sistema.hwh
+Generated Block Design Tcl file D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/hw_handoff/sistema_bd.tcl
+Generated Hardware Definition File D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/synth/sistema.hwdef
+generate_target: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1140.766 ; gain = 167.281
+catch { config_ip_cache -export [get_ips -all sistema_processing_system7_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP sistema_processing_system7_0_0, cache-ID = edfe5daa8a8a0ff0; cache size = 9.691 MB.
+catch { config_ip_cache -export [get_ips -all sistema_pwm_ip_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP sistema_pwm_ip_0_0, cache-ID = b654f89259bcc0df; cache size = 9.691 MB.
+catch { config_ip_cache -export [get_ips -all sistema_rst_ps7_0_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP sistema_rst_ps7_0_100M_0, cache-ID = 18e9b1b561628373; cache size = 9.691 MB.
+catch { config_ip_cache -export [get_ips -all sistema_ila_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP sistema_ila_0_0, cache-ID = d1b9c0d113fe4650; cache size = 9.691 MB.
+catch { config_ip_cache -export [get_ips -all sistema_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP sistema_auto_pc_0, cache-ID = 1955bf98cdf49cc0; cache size = 9.691 MB.
+export_ip_user_files -of_objects [get_files D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd]
+export_simulation -of_objects [get_files D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd] -directory D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.ip_user_files/sim_scripts -ip_user_files_dir D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.ip_user_files -ipstatic_source_dir D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.cache/compile_simlib/modelsim} {questa=D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.cache/compile_simlib/questa} {riviera=D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.cache/compile_simlib/riviera} {activehdl=D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/sistema.bd] -top
+add_files -norecurse D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/hdl/sistema_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Jun 16 23:49:05 2024] Launched synth_1...
+Run output will be captured here: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/synth_1/runme.log
+[Sun Jun 16 23:49:05 2024] Launched impl_1...
+Run output will be captured here: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.683 . Memory (MB): peak = 1960.430 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.683 . Memory (MB): peak = 1960.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2034.117 ; gain = 868.852
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+file copy -force D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.sysdef D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+
+launch_sdk -workspace D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 23:59:35 2024...

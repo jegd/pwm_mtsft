@@ -1,0 +1,15 @@
+00:56:42 **** Incremental Build of configuration Debug for project pwm3_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+00:56:49 **** Incremental Build of configuration Debug for project pwm3_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+01:09:36 **** Incremental Build of configuration Debug for project pwm3_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.

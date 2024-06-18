@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun 16 23:59:38 2024
+# Process ID: 9500
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2808 D:\CESE_UBA\Mysoft\Pro_final_pwm\Sintesis\project_pwm.xpr
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/vivado.log
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 885.711 ; gain = 119.121
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk -hwspec D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.sdk/sistema_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:lseserver.ddns.net:7777
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:lseserver.ddns.net:7777".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 910.391 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:181.47.10.131:7777
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:181.47.10.131:7777".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 910.391 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+ERROR: [Common 17-165] Too many positional options when parsing 'false', please type 'connect_hw_server -help' for usage info.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:lseserver.ddns.net:3121
+connect_hw_server -url lseserver.ddns.net:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:lseserver.ddns.net:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A4C81CA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A4C81CA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target lseserver.ddns.net:3121/xilinx_tcf/Digilent/003017A4C81CA
+set_property PROGRAM.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'sistema_i/ila_0' at location 'uuid_AF038F8270345A4B8FDFD2D089BDBC22' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z010_1 and the probes file(s) D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.runs/impl_1/sistema_wrapper.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+close_hw_target {lseserver.ddns.net:3121/xilinx_tcf/Digilent/003017A4C81CA}
+INFO: [Labtoolstcl 44-464] Closing hw_target lseserver.ddns.net:3121/xilinx_tcf/Digilent/003017A4C81CA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 00:24:21 2024...

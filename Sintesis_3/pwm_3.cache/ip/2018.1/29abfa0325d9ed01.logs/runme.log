@@ -1,0 +1,409 @@
+
+*** Running vivado
+    with args -log sist_pwm_3ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sist_pwm_3ip_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source sist_pwm_3ip_0_0.tcl -notrace
+Command: synth_design -top sist_pwm_3ip_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27376 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.598 ; gain = 101.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sist_pwm_3ip_0_0' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ip/sist_pwm_3ip_0_0/synth/sist_pwm_3ip_0_0.vhd:83]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'pwm_3ip_v1_0' declared at 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0.vhd:5' bound to instance 'U0' of component 'pwm_3ip_v1_0' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ip/sist_pwm_3ip_0_0/synth/sist_pwm_3ip_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'pwm_3ip_v1_0' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'pwm_3ip_v1_0_S00_AXI' declared at 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:5' bound to instance 'pwm_3ip_v1_0_S00_AXI_inst' of component 'pwm_3ip_v1_0_S00_AXI' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'pwm_3ip_v1_0_S00_AXI' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-226] default block is never used [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:367]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'pwm' declared at 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:5' bound to instance 'pwm_inst' of component 'pwm' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'pwm' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:19]
+	Parameter N bound to: 32 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'contBCD' declared at 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/contBCD.vhd:5' bound to instance 'contBCD_inst' of component 'contBCD' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'contBCD' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/contBCD.vhd:19]
+	Parameter N bound to: 32 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'd:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/reg.vhd:4' bound to instance 'reg_inst' of component 'reg' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/contBCD.vhd:46]
+INFO: [Synth 8-638] synthesizing module '\reg ' [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/reg.vhd:18]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (1#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/reg.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'contBCD' (2#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/contBCD.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (3#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'pwm_3ip_v1_0_S00_AXI' (4#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'pwm_3ip_v1_0' (5#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/hdl/pwm_3ip_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'sist_pwm_3ip_0_0' (6#1) [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ip/sist_pwm_3ip_0_0/synth/sist_pwm_3ip_0_0.vhd:83]
+WARNING: [Synth 8-3331] design contBCD has unconnected port num_maxi[31]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design pwm_3ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 445.004 ; gain = 155.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 445.004 ; gain = 155.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 445.004 ; gain = 155.848
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 765.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 765.320 ; gain = 476.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 765.320 ; gain = 476.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 765.320 ; gain = 476.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 765.320 ; gain = 476.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     31 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               18 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module contBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+Module pwm_3ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.srcs/sources_1/bd/sist/ipshared/00ad/src/pwm.vhd:42]
+DSP Report: Generating DSP n_ciclos_on2, operation Mode is: A*B.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+DSP Report: Generating DSP n_ciclos_on2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP n_ciclos_on2.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+DSP Report: Generating DSP n_ciclos_on2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP n_ciclos_on2.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+DSP Report: operator n_ciclos_on2 is absorbed into DSP n_ciclos_on2.
+WARNING: [Synth 8-3331] design contBCD has unconnected port num_maxi[31]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design sist_pwm_3ip_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[25]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[26]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[27]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[28]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[29]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[30]' (FDR) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/pwm_3ip_v1_0_S00_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/pwm_3ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/pwm_3ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/pwm_3ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/pwm_3ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/pwm_inst/aux1_reg[31]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module sist_pwm_3ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/pwm_3ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module sist_pwm_3ip_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 765.320 ; gain = 476.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pwm         | A*B             | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A2*B            | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A2*B | 15     | 15     | -      | -      | 15     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 822.648 ; gain = 533.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 824.109 ; gain = 534.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   337|
+|2     |DSP48E1_1 |     3|
+|3     |LUT1      |   127|
+|4     |LUT2      |    90|
+|5     |LUT3      |   904|
+|6     |LUT4      |    94|
+|7     |LUT5      |   119|
+|8     |LUT6      |   283|
+|9     |FDRE      |   226|
+|10    |FDSE      |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |  2185|
+|2     |  U0                          |pwm_3ip_v1_0         |  2185|
+|3     |    pwm_3ip_v1_0_S00_AXI_inst |pwm_3ip_v1_0_S00_AXI |  2185|
+|4     |      pwm_inst                |pwm                  |  1956|
+|5     |        contBCD_inst          |contBCD              |   122|
+|6     |          reg_inst            |\reg                 |    87|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 872.938 ; gain = 263.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.938 ; gain = 583.781
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 340 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sist_pwm_3ip_0_0' is not ideal for floorplanning, since the cellview 'pwm' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 872.938 ; gain = 595.312
+INFO: [Common 17-1381] The checkpoint 'D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.runs/sist_pwm_3ip_0_0_synth_1/sist_pwm_3ip_0_0.dcp' has been generated.

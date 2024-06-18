@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 18 01:02:59 2024
+# Process ID: 28188
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.runs/synth_1
+# Command line: vivado.exe -log sist_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sist_wrapper.tcl
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.runs/synth_1/sist_wrapper.vds
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis_3/pwm_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sist_wrapper.tcl -notrace

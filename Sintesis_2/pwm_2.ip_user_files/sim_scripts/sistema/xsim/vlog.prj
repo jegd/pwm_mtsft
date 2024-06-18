@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/b193/hdl" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/4903" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/6180/hdl/verilog" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/a08d/hdl/verilog" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/2875/hdl/verilog" --include "../../../../pwm_2.srcs/sources_1/bd/sistema/ipshared/2c14/hdl/verilog" \
+"../../../bd/sistema/ip/sistema_processing_system7_0_0/sim/sistema_processing_system7_0_0.v" \
+"../../../bd/sistema/ip/sistema_clk_wiz_0_0/sistema_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/sistema/ip/sistema_clk_wiz_0_0/sistema_clk_wiz_0_0.v" \
+"../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

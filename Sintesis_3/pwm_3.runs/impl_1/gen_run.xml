@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1718690386">
+  <File Type="PWROPT-DCP" Name="sist_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="sist_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="sist_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="sist_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="sist_wrapper_reports.tcl"/>
+  <File Type="BG-DRC" Name="sist_wrapper.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sist_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sist_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="sist_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="sist_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="sist_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="sist_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="sist_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sist_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sist_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="sist_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sist_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="sist_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sist_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="sist_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sist_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sist_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="sist_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sist_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sist_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sist_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sist_wrapper_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="sist_wrapper.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="sist_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sist_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sist_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sist_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="sist_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="sist_wrapper_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="sist_wrapper.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="sist_wrapper_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="sist_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sist_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="sist_wrapper.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sist_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="sist_wrapper.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sist_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="sist_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="sist_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sist_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sist_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="sist_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sist_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sist_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="sist_wrapper.vdi"/>
+  <File Type="ROUTE-CLK" Name="sist_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sist_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sist_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sist_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sist_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sist_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="sist_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="sist_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="sist_wrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sist_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sist_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/sist/sist.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sist/hdl/sist_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sist_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="sist_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sist_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sist_pwm_3ip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sist_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sist_auto_pc_0"/>
+</GenRun>
