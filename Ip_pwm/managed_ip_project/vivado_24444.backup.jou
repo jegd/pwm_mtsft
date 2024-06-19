@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 18 21:49:55 2024
+# Process ID: 24444
+# Current directory: D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22036 D:\CESE_UBA\Mysoft\Pro_final_pwm\Ip_pwm\managed_ip_project\managed_ip_project.xpr
+# Log file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project/vivado.log
+# Journal file: D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project/managed_ip_project.xpr
+create_peripheral xilinx.com user pwm_4ip 1.0 -dir D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:pwm_4ip:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:pwm_4ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:pwm_4ip:1.0]
+set_property  ip_repo_paths  {D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project/../ip_repo/pwm_4ip_1.0 D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/ip_repo/pwm_3ip_1.0 D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/ip_repo/pwm_2ip_1.0 D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/ip_repo/pwm_ip_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_pwm_4ip_v1_0 -directory D:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/managed_ip_project/../ip_repo d:/CESE_UBA/Mysoft/Pro_final_pwm/Ip_pwm/ip_repo/pwm_4ip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project managed_ip_project
+close_project

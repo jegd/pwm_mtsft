@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/hdl/pwm_ip_v1_0_S00_AXI.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/src/contBCD.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/src/pwm.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/src/reg.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/hdl/pwm_ip_v1_0.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ip/sistema_pwm_ip_0_0/sim/sistema_pwm_ip_0_0.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ip/sistema_ila_0_0/sim/sistema_ila_0_0.vhd" \
+"../../../../project_pwm.ip_user_files/bd/sistema/sim/sistema.vhd" \
+"../../../../project_pwm.srcs/sources_1/bd/sistema/hdl/sistema_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

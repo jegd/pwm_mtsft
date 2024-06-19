@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" --include "../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" --include "../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b193/hdl" --include "E:/Vivado/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ip/sistema_processing_system7_0_0/sim/sistema_processing_system7_0_0.v" \
+"../../../../project_pwm.ip_user_files/bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

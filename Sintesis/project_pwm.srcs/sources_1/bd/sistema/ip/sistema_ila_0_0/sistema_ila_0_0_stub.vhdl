@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Sun Jun 16 22:21:33 2024
+-- Date        : Tue Jun 18 22:47:50 2024
 -- Host        : LAPTOP-VCKIONAK running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top sistema_ila_0_0 -prefix
---               sistema_ila_0_0_ sistema_ila_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.srcs/sources_1/bd/sistema/ip/sistema_ila_0_0/sistema_ila_0_0_stub.vhdl
 -- Design      : sistema_ila_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

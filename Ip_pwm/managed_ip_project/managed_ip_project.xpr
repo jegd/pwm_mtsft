@@ -23,6 +23,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Managed_IP"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/pwm_4ip_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/pwm_3ip_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/pwm_2ip_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/pwm_ip_1.0"/>

@@ -87,6 +87,7 @@ vcom -work proc_sys_reset_v5_0_12 -64 -93 \
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
 "../../../bd/sistema/ip/sistema_ila_0_0/sim/sistema_ila_0_0.vhd" \
+"../../../bd/sistema/sim/sistema.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b193/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/6180/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/a08d/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2875/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2c14/hdl/verilog" "+incdir+E:/Vivado/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b193/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/6180/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/a08d/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2875/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2c14/hdl/verilog" "+incdir+E:/Vivado/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -111,9 +112,6 @@ vlog -work axi_protocol_converter_v2_1_16 -64 "+incdir+../../../../project_pwm.s
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b193/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/6180/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/a08d/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2875/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2c14/hdl/verilog" "+incdir+E:/Vivado/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/02c8/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b193/hdl" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/6180/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/a08d/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2875/hdl/verilog" "+incdir+../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/2c14/hdl/verilog" "+incdir+E:/Vivado/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
-
-vcom -work xil_defaultlib -64 -93 \
-"../../../bd/sistema/sim/sistema.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

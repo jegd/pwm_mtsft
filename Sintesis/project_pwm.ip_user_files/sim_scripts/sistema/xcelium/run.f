@@ -52,6 +52,7 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
   "../../../bd/sistema/ip/sistema_ila_0_0/sim/sistema_ila_0_0.vhd" \
+  "../../../bd/sistema/sim/sistema.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../project_pwm.srcs/sources_1/bd/sistema/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -76,9 +77,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/sistema/sim/sistema.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

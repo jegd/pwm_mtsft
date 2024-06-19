@@ -1,0 +1,25 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: sistema_wrapper.sistema_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 5 ns  Iteration: 1  Process: /sistema_wrapper/sistema_i/pwm_ip_0/U0/pwm_ip_v1_0_S00_AXI_inst/pwm_inst/line__55
+  File: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/src/pwm.vhd
+
+HDL Line: D:/CESE_UBA/Mysoft/Pro_final_pwm/Sintesis/project_pwm.ip_user_files/bd/sistema/ipshared/c0c3/src/pwm.vhd:58
